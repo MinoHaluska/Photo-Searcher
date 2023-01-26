@@ -1,0 +1,193 @@
+
+.container_search{
+    width: 100%;
+    position: relative;
+    background-image: url(../assets/background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat ;
+    height: 100vh;
+    box-shadow: 0px 5px 15px black ;
+}
+
+.form{
+    width: 80%;
+    max-width: 800px;
+    margin: 2rem auto;
+}
+
+h1{
+    font-family: sans-serif;
+    font-size: 3rem;
+    color: white;
+    text-shadow: 6px 6px 4px black;
+    text-align: center;
+    padding-top: 5rem;
+    letter-spacing: 1px;
+}
+
+.badTerm{
+    color: black;
+    text-shadow: none;
+    line-height: 2.5rem;
+}
+
+.container{
+    margin-top: 1rem;
+    width: 80%;
+    display: flex;
+}
+
+.con_num{
+    width: 80%;
+    margin: 1rem auto 0;
+    text-align: center;
+}
+
+.con_num h3{
+    font-size: 1.4rem;
+    color: black;
+    display: inline-block;
+    background: rgba(0, 0, 0, 0.2);
+    padding: 0.3rem 1rem;
+    border-radius: 0.5rem;
+}
+
+.con_num .control{
+  font-size: 1.2rem;
+  color: black;
+  font-weight: bold;
+}
+
+/* Transition play  */
+
+.min{
+    transition-duration: 0.6s;
+    height: 300px;
+}
+
+.min h1{
+    transition-duration: 0.6s;
+    padding-top: 1rem;
+}
+
+.min .input{
+    transition-duration: 2s;
+    transform: rotateX(360deg);
+
+}
+
+.min .button{
+    transition-delay: 0.1s;
+    transition-duration: 2s;
+    transform: rotateX(360deg);
+}
+
+/* Transition back  */
+
+.max{
+    transition-duration: 0.6s;
+    height: 100vh;
+}
+
+.max h1{
+    transition-duration: 0.6s;
+    padding-top: 5rem;
+}
+
+.max .input{
+    transition-duration: 2s;
+    transform: rotateX(-360deg);
+}
+
+.max .button{
+    transition-delay: 0.1s;
+    transition-duration: 2s;
+    transform: rotateX(-360deg);
+}
+
+
+/* Media  */
+
+@media screen and (max-width: 460px) {
+    
+    h1{
+        font-size: 2rem;
+        padding-top: 2rem;
+    }
+
+    .con_num h3{
+        font-size: 1rem;
+        padding: 0.3rem 0.5rem;
+        background: rgba(255, 255, 255, 0.2);
+        font-weight: bold;
+    }
+
+    .form{
+        width: 95%;
+        margin-top: 0;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .card{
+        width: 95%;
+    }
+    
+}
+
+
+/* Cards  */
+
+.containerCard:last-child{
+    padding-bottom: 1rem;
+}
+
+.card{
+    max-width: 800px;
+    margin: 1rem auto;
+    box-shadow: 5px 5px 15px black;
+    border-radius: 1rem;
+}
+
+.card .title{
+    font-size: 1.2rem;
+    font-weight: normal;
+    padding-bottom: 0.5rem;
+}
+
+.card .title::first-letter {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: brown;
+}
+
+.card img{
+    margin: 0 auto;
+    border-radius: 0.5rem;
+}
+
+.card .download{
+    display: inline-block;
+    text-align: center;
+    padding: 0.4rem 1rem;
+    border-radius: 0.5rem;
+    border: 3px solid rgb(107, 145, 226);
+    color: rgb(107, 145, 226);
+
+    transition: transform 0.4s, background-color 0.4s, color 0.4s;
+    
+}
+
+.card .download:hover{
+    transform: scale(1.06);
+    background-color: rgb(107, 145, 226);
+    color: white;
+}
+
+
+
+
+
+
+
+
